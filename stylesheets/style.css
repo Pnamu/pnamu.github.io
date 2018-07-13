@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  padding: 30px;
+  font: 14px "Noto Sans KR", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background-color: #F5F5F6;
+}
+
+#logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  text-align: right;
+  vertical-align: top;
+}
+
+#find-me-at {
+  display: inline;
+}
+
+#buttons form {
+  display: inline;
+}
+
+#created-wrapper {
+  text-align: right;
+  vertical-align: middle;
+}
+
+#created-by {
+  display: inline-block;
+}
+
+#find-me-at img {
+  width: 60px;
+  height: 60px;
+}
+
+#created-by img {
+  width: 40px;
+  height: 40px;
+}
+
+#find-me-at img, #created-by img {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#donate {
+  display: inline-block;
+}
+
+.sigong {
+  display: none;
+}
+
+#more {
+  text-align: right;
+}
+
+#more button {
+  margin: 10px;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#hos:hover {
+  -ms-animation: rotating 1.5s ease-out infinite;
+  -moz-animation: rotating 1.5s ease-out infinite;
+  -webkit-animation: rotating 1.5s ease-out infinite;
+  -o-animation: rotating 1.5s ease-out infinite;
+  animation: rotating 1.5s ease-out infinite;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.price-down {
+  color: blue !important;
+}
+.price-up {
+  color: red !important;
+}
+
+.MuiTable-root-28 {
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif !important;
+}
+
+.MuiTableCell-body-37 {
+  font-size: 1.25rem !important;
+}
+
+.MuiButton-root-120 {
+  font-size: 1.125rem !important;
+}
