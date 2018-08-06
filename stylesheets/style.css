@@ -12,6 +12,11 @@ body {
   margin-bottom: 20px;
 }
 
+#logo > a > src { 
+  width: 256px;
+  height: 70px;
+}
+
 #buttons {
   text-align: right;
   vertical-align: top;
