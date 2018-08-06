@@ -34,6 +34,11 @@ body {
   display: inline-block;
 }
 
+#logo img {
+  width: 256px;
+  height: 70px;
+}
+
 #find-me-at img {
   width: 60px;
   height: 60px;
