@@ -124,6 +124,10 @@ a {
   font-family: 'Noto Sans KR', 'Roboto', sans-serif !important;
 }
 
+.MuiTableCell-root-67 {
+  padding: 4px 10px 4px 10px;
+}
+
 .MuiButton-root-120 {
   font-size: 1.125rem !important;
 }
