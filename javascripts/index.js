@@ -18,6 +18,14 @@ window.onload = () => {
   }
 }
 
+function setDisplayAppreance(self) {
+  if (self.value === '다크모드로 전환') {
+    setDarkMode();
+  } else {
+    setLightMode();
+  }
+}
+
 function setDarkMode() {
   var body = document.querySelector('body');
   var btn = document.getElementById('btnDisplayMode');
@@ -27,7 +35,7 @@ function setDarkMode() {
   btn.style.backgroundColor = '#262626';
   btn.style.color = 'yellow';
   document.getElementById('btnDisplayMode').value = '라이트모드로 전환';
-  
+
   // 사용자 모드를 'dark'로 저장
   localStorage.setItem('userMode', 'dark');
 }
@@ -41,7 +49,7 @@ function setLightMode() {
   btn.style.backgroundColor = '#efefef';
   btn.style.color = 'black';
   document.getElementById('btnDisplayMode').value = '다크모드로 전환';
-  
+
   // 사용자 모드를 'light'로 저장
   localStorage.setItem('userMode', 'light');
 }
