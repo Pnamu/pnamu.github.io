@@ -1,3 +1,4 @@
+// 페이지 로딩 시 실행되는 함수
 window.onload = () => {
   let images = document.querySelectorAll('#created-by img');
   document.getElementById('created-by').addEventListener('mouseover', (e) => {
@@ -18,6 +19,7 @@ window.onload = () => {
   }
 }
 
+// 버튼을 클릭할 때 실행되는 함수
 function setDisplayAppreance(self) {
   if (self.value === '다크모드로 전환') {
     setDarkMode();
@@ -26,6 +28,7 @@ function setDisplayAppreance(self) {
   }
 }
 
+// 다크 모드로 설정하는 함수
 function setDarkMode() {
   var body = document.querySelector('body');
   var btn = document.getElementById('btnDisplayMode');
@@ -40,6 +43,7 @@ function setDarkMode() {
   localStorage.setItem('userMode', 'dark');
 }
 
+// 라이트 모드로 설정하는 함수
 function setLightMode() {
   var body = document.querySelector('body');
   var btn = document.getElementById('btnDisplayMode');
@@ -53,3 +57,6 @@ function setLightMode() {
   // 사용자 모드를 'light'로 저장
   localStorage.setItem('userMode', 'light');
 }
+
+// 페이지 로딩 시 초기 스타일 설정
+setInitialStyle();
