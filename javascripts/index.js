@@ -21,7 +21,7 @@ function setDisplayAppreance(self) {
     btn.style.color = 'yellow';
     self.value = '라이트모드로 전환';
   } else {
-    body.style.backgroundColor = 'white';
+    body.style.backgroundColor = '#f5f5f6';
     body.style.color = 'black';
     btn.style.backgroundColor = '#efefef';
     btn.style.color = 'black';
