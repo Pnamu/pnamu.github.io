@@ -30,9 +30,9 @@ function setDarkMode() {
   var body = document.querySelector('body');
   var btn = document.getElementById('btnDisplayMode');
 
-  body.style.backgroundColor = '#262626';
+  body.style.backgroundColor = '#252526';
   body.style.color = 'white';
-  btn.style.backgroundColor = '#262626';
+  btn.style.backgroundColor = '#252526';
   btn.style.color = 'yellow';
   document.getElementById('btnDisplayMode').value = '라이트모드로 전환';
 
