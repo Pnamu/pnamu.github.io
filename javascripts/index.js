@@ -17,13 +17,13 @@ function setDisplayAppreance(self) {
   if (self.value === '다크모드로 전환') {
     body.style.backgroundColor = '#262626';
     body.style.color = 'white';
-    btn.style.backgroundColor = '262626';
+    btn.style.backgroundColor = '#262626';
     btn.style.color = 'yellow';
     self.value = '라이트모드로 전환';
   } else {
     body.style.backgroundColor = 'white';
     body.style.color = 'black';
-    btn.style.backgroundColor = '262626';
+    btn.style.backgroundColor = '#efefef';
     btn.style.color = 'black';
     self.value = '다크모드로 전환';
   }
