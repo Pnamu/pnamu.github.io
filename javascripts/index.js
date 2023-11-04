@@ -1,4 +1,3 @@
-// 페이지 로딩 시 실행되는 함수
 window.onload = () => {
   let images = document.querySelectorAll('#created-by img');
   document.getElementById('created-by').addEventListener('mouseover', (e) => {
