@@ -9,17 +9,10 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
    gtag('config', 'UA-25214910-2');
-    <script
-  dangerouslySetInnerHTML={{
-    __html: `
-              const theme = localStorage.getItem("theme");
-              document.documentElement.setAttribute("data-theme", theme);
-              console.log(theme);
-            `,
-  }}
+    const theme = localStorage.getItem('theme');
+    document.documentElement.setAttribute('data-theme', theme);
+    console.log(theme);
 ></script>;
-    
-   
   </script>
   <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
