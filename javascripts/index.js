@@ -33,8 +33,6 @@ function setDarkMode() {
 
   body.style.backgroundColor = '#252626';
   body.style.color = 'white';
-  btn.style.backgroundColor = '#252626';
-  btn.style.color = 'yellow';
   document.getElementById('btnDisplayMode').value = '라이트모드로 전환';
 
   // 사용자 모드를 'dark'로 저장
@@ -47,8 +45,6 @@ function setLightMode() {
 
   body.style.backgroundColor = '#f5f5f6';
   body.style.color = 'black';
-  btn.style.backgroundColor = '#efefef';
-  btn.style.color = 'black';
   document.getElementById('btnDisplayMode').value = '다크모드로 전환';
 
   // 사용자 모드를 'light'로 저장
