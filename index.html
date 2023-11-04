@@ -9,35 +9,15 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
    gtag('config', 'UA-25214910-2');
-    <script type="text/javascript">
-      (function() {
-        function getInitialColorMode() {
-          const isClient = typeof window !== 'undefined';
-          if (isClient) {
-            const persistedColorPreference = window.localStorage.getItem('mode');
-    
-            if (persistedColorPreference) {
-              return persistedColorPreference;
-            }
-    
-            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
-            if (systemPreference.matches) {
-              return 'true';
-            }
-            return 'false';
-          }
-        }
-        const colorMode = getInitialColorMode();
-        document.documentElement.style.setProperty(
-          'background-color',
-          colorMode === 'false' ? '#f5f5f6' : 'black'
-        );
-        document.documentElement.style.setProperty(
-          'color',
-          colorMode === 'false' ? '#252626' : 'white'
-        );
-      })();
-    </script>
+    <script
+  dangerouslySetInnerHTML={{
+    __html: `
+              const theme = localStorage.getItem("theme");
+              document.documentElement.setAttribute("data-theme", theme);
+              console.log(theme);
+            `,
+  }}
+></script>;
     
    
   </script>
